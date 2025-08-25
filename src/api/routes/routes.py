@@ -5,10 +5,14 @@ from api.routes.schemas.predict import PredictRequest, PredictResponse
 api_v1 = APIRouter(prefix='/api/v1')
 
 @api_v1.post('/predict', response_model=PredictResponse)
-def make_prediction(payload: PredictRequest):
-    pass
-    # return {
-    #     PredictResponse(
-    #         Tg
-    #     )
-    # }   
+async def make_prediction(payload: PredictRequest):
+    
+    return {
+        PredictResponse(
+            tg=tg,
+            ffv=ffv,
+            tc=tc,
+            density=density,
+            rg=rg
+        )
+    }   

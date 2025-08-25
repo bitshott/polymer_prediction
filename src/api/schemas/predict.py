@@ -5,8 +5,8 @@ class PredictRequest(BaseModel):
     smiles: str = Field(..., min_length=1)
 
 class PredictResponse(BaseModel):
-    Tg: float = Field(..., gt=0)
-    FFV: float = Field(..., gt=0)
-    Tc: float = Field(..., gt=0)
-    Density: float = Field(..., gt=0)
-    Rg: float = Field(..., gt=0)
+    tg: float = Field(..., gt=0)
+    ffv: float = Field(..., gt=0)
+    tc: float = Field(..., gt=0)
+    density: float = Field(..., gt=0)
+    rg: float = Field(..., gt=0)
