@@ -1,0 +1,11 @@
+--index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+numpy
+gensim
+tqdm
+joblib
+pandas
+matplotlib
+IPython
+seaborn
+deepchem
